@@ -1,0 +1,10 @@
+$doctype 5
+<html>
+    <head>
+        <title>#{pageTitle p}
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        ^{pageHead p}
+    <body>
+        $maybe msg <- mmsg
+            <p .message>#{msg}
+        ^{pageBody p}
